@@ -5,7 +5,8 @@ category: tutorial-tips
 tags:     [rails, rails-6]
 feature:  /assets/img/multiple-db-pic1.png
 ---
-
+Know to deploy with capistrano, nginx and passenger
+<!--more-->
 ##### Setup Capistrano ?
 Gem file
 ```ruby
@@ -80,7 +81,8 @@ server {
  passenger_ruby /home/deploy/.rbenv/versions/2.6.6/bin/ruby;
 }
 ```
-### Setup ssh and git
+### Setup ssh and git ?
+### Setup shared folder ?
 
 
 ##### Deploy ???
