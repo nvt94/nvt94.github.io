@@ -54,7 +54,7 @@ server "sample-web-server", user: "deploy", roles: %w{app db web}
 This option specifies that the master key used to decrypt credentials should be available on our web server.
 config.require_master_key = true
 
-rails secret
+###### rails secret
 ```ruby
 EDITOR="mine" bin/rails credentials:edit
 The config/master.key and config/credentials.yml.enc files will be generated.
@@ -64,7 +64,7 @@ The config/master.key and config/credentials.yml.enc files will be generated.
 install nginx
 install passenger
 
-### config nginx
+###### Config nginx
 * mod-http-passenger.conf file
 passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;
 passenger_ruby /usr/bin/passenger_free_ruby;
@@ -81,8 +81,9 @@ server {
  passenger_ruby /home/deploy/.rbenv/versions/2.6.6/bin/ruby;
 }
 ```
-### Setup ssh and git ?
-### Setup shared folder ?
+
+###### Setup ssh and git ?
+###### Setup shared folder ?
 
 
 ##### Deploy ???
